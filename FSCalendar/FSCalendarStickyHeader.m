@@ -66,13 +66,13 @@
     
     self.weekdayView.frame = CGRectMake(0, _contentView.fs_height-weekdayHeight-weekdayMargin, self.contentView.fs_width, weekdayHeight);
     
-    CGFloat titleHeight = [@"1" sizeWithAttributes:@{NSFontAttributeName:self.calendar.appearance.headerTitleFont}].height*1.5 + weekdayMargin*3;
+    CGFloat titleHeight = [@"1" sizeWithAttributes:@{NSFontAttributeName:self.calendar.appearance.headerTitleFont}].height*1.5 + weekdayMargin*3 + 18;
     
-    _topBorder.frame = CGRectMake(0, _contentView.fs_height-weekdayHeight-weekdayMargin*2 - 35, _contentView.fs_width, 1.0);
+    _topBorder.frame = CGRectMake(0, _contentView.fs_height-weekdayHeight-weekdayMargin*2 - 38, _contentView.fs_width, 1.0);
 
     CGPoint titleHeaderOffset = self.calendar.appearance.headerTitleOffset;
     _titleLabel.frame = CGRectMake(titleHeaderOffset.x,
-                                   titleHeaderOffset.y+_topBorder.fs_bottom-titleHeight-weekdayMargin + 45,
+                                   titleHeaderOffset.y+_topBorder.fs_bottom-titleHeight-weekdayMargin + 52,
                                    titleWidth,
                                    titleHeight);
 }
